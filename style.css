@@ -1,4 +1,3 @@
-/* Reset */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,18 +11,17 @@ body {
     background: black;
     color: white;
     padding: 8px;
-    z-index: 100;
 }
 
 .skip-link:focus {
     top: 10px;
 }
 
-/* Navigation - Flex */
+/* Navigation (Flex) */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background: #333;
 }
 
 nav a {
@@ -32,13 +30,13 @@ nav a {
     text-decoration: none;
 }
 
-/* Hover effect */
+/* Hover */
 nav a:hover {
-    background-color: #555;
+    background: #555;
     transition: 0.3s;
 }
 
-/* Grid layout */
+/* Grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -46,7 +44,7 @@ nav a:hover {
     padding: 20px;
 }
 
-/* Images - Box Model */
+/* Image style */
 img {
     width: 100%;
     border: 3px solid black;
@@ -57,5 +55,11 @@ img {
 /* nth-child */
 .grid-container img:nth-child(even) {
     border-radius: 50%;
+}
+
+/* Hover image */
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
